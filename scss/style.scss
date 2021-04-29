@@ -1,0 +1,212 @@
+@import "color";
+@import "services";
+@import "projects";
+@import "about";
+@import "contacts";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    body{
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: $fondoPrimario;
+            width: 100%;
+            align-items: center;
+        }
+            div.logo_rendeed{
+                width: 12rem;
+                margin: .9rem 2rem .9rem 15rem;
+            }
+            nav#navUno ul{
+                display: flex;
+                padding: 1rem 15rem 0.5rem 1rem;
+                list-style: none;
+                width: 100%;   
+            }
+            nav#navUno ul li a{
+                padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+                font-size: 1rem;    
+                color: $colorFuenteSecundaria;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            nav#navUno ul li a:hover{
+                color: $fondoHover;
+                font-weight: 600;
+            }
+        }
+        main{
+            background-color: $fondoMain; 
+        }
+            div.about_uno{
+                display: block;
+                text-align: center;
+                align-items: center;
+                background-color: $fondoPrimario;
+                height: 30rem;
+                padding: 8rem 8rem;
+                margin: 0rem;
+            }
+            h1#tituloUno{
+                align-items: center;
+                text-align: center;
+                font-weight: 200;
+                color: $colorFuenteSecundaria;
+                font-size: 2rem;
+            }
+            .desc_uno{
+                font-size: 16px;
+                font-weight: 200;
+                color: $colorFuenteSecundaria;
+            }
+            section.section_about{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-align: center;
+            }
+                div.about_dos{
+                    color: $colorFuentePrimaria;
+
+                    border: solid 1px;
+                }
+            section.service{
+                background-color: rgb(223, 223, 223);
+                opacity: 0.85;
+            }
+                div.cards{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    align-items: center;
+                    height: 35rem;
+                    
+                }
+                div.card_uno,
+                div.card_dos,
+                div.card_tres{
+                    display: block;
+                    text-align: center;
+                }
+            h3.title_card{
+                font-weight: 500;
+            }
+            div.box_button{
+                display: flex;
+                text-align:center;
+                align-items: center;
+            }
+            p.texto_seis{
+                display: block;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-style: normal;
+                font-size: 2rem;
+                padding: auto;
+                padding: auto 5rem;
+                color: white;
+                text-transform: uppercase;
+            }
+            .button_contact{
+                display: block;
+                align-content: space-between;
+                text-align: center;
+                padding: 1rem;
+                margin: 1rem auto 2rem auto;
+                border: 1px solid transparent;
+                border-radius: 30px;
+                background-color: $fondoGreen;
+                color: white;
+                text-transform: uppercase;
+                width: 15rem;
+            }
+            .button_contact:hover{
+                cursor: pointer;
+                background-color: rgba(3, 97, 0, 0.753) 
+            }
+            div.contact{
+                display: block;
+                text-align: center;
+                height: 25rem;
+                background-color: rgb(66, 66, 66);
+                margin: auto;
+                padding: 7.5rem;
+            }
+            .section_biblio{
+                    display: grid;
+                    grid-template-columns: 30% 70%;
+                }
+                div.biblio{
+                    text-align: right;
+                    padding-top: 5rem;
+                }
+                .photo_perfil{
+                    border-radius: 50%;
+                }
+                .text_biblio{
+                    font-weight: 200;
+                    text-align: left;
+                    padding: 10rem 15rem 10rem 5rem;
+                }
+                .name_bold{
+                    font-weight: bold;
+                }
+        .footer_cero{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 70% 30%;
+            height: 20rem;
+            background-color: $fondoGreen;
+        }
+        .logo_rendeed_footer{
+            width: 25rem;
+            margin: 5rem auto;
+        }
+        .footer_tres{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .footer_tres ul{
+            text-align: left;
+            padding: 4rem 60px;
+        }
+        .footer_tres ul li{
+            list-style: none;
+            width: 100%;   
+        }
+        .footer_tres ul li a{
+            font-size: 1rem;    
+            color: $colorFuentePrimaria;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .footer_tres ul li a:hover{
+            font-weight: 600;
+        }
+        div.footer_tres_addres{
+            text-align: left;
+            padding: 4rem 60px;
+            color: $colorFuentePrimaria;
+        }
+        .footer_cuatro{
+            width: 100%;
+            color: $colorFuentePrimaria;
+            padding-left: 115px;
+        }
+        .footer_cinco{
+            color: $colorFuentePrimaria;
+            text-align: center;
+        }
+        .img_social{
+            text-align: center;
+            padding: 3px 3px;
+        }
+
+        .footer_seis{
+            color: $colorFuentePrimaria;
+            text-align: left;
+            padding: 20px 60px;
+        }
